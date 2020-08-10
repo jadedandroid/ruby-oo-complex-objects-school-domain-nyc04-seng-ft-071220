@@ -1,3 +1,5 @@
+require "pry"
+
 class School
   attr_accessor :roster
   attr_reader :name
@@ -19,6 +21,7 @@ class School
   
   def sort 
     @roster.sort
+    binding.pry
   end
 end
  
