@@ -19,9 +19,13 @@ class School
    @roster[num]
   end
   
-  def sort 
-    @roster.sort
-    binding.pry
+   # this method should arrange the students in each grade by alphabetical order
+  def sort
+    sorted = {}
+    roster.each do |grade, students|
+      sorted[grade] = students.sort
+    end
+    sorted
   end
 end
  
